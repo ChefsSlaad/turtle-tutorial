@@ -38,3 +38,12 @@ def web(size, webs):
         # terug naar de middenlijnen
         left(angle)
 web(250,6)
+
+from turtle import * 
+colors = ['red', 'purple', 'blue', 'green', 'yellow', 'orange']
+speed(0)
+for i in range(360):
+    pencolor(colors[i%6])
+    width(i/100+1)
+    forward(i)
+    left(59)
